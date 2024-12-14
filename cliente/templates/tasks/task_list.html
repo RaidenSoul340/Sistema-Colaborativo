@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<link href="{% static 'css/tasks/list_task.css' %}" rel="stylesheet">
+<body>
+    <h1>Lista de Tarefas</h1>
+    <a href="{% url 'add_task' %}" class="add-task">Adicionando nova tarefa</a>
+
+    <h2 class="T-I">Tarefas Incompletas</h2>
+    <div class=" Secao_tarefas">
+        {% for task in tasks %}
+            {% if not task.status %}
+                <div class="task incomplete">
+                    {{ task.titulo }}
+                </div>
+                <a href="{% url 'atualizar_task' task.id %}">Editar Tarefas</a>
+                <a href="{% url 'delete_task' task.id %}">Excluir Tarefas</a>
+            {% endif %}
+        {% empty %}
+            <p class="incompleta">Não há tarefas incompletas.</p>
+        {% endfor %}
+    </div>
+
+    <h2 class="T-F">Tarefas Completas</h2>
+    <div class=" Secao_tarefas">
+        {% for task in tasks %}
+            {% if task.status %}
+                <div class="task complete">
+                    {{ task.titulo }}
+                </div>
+                <a href="{% url 'atualizar_task' task.id %}">Editar Tarefas</a>
+                <a href="{% url 'delete_task' task.id %}">Excluir Tarefas</a>
+            {% endif %}
+        {% empty %}
+            <p class="completa">Não há tarefas completas.</p>
+        {% endfor %}
+    </div>
+</body>
+
+{% endblock %}

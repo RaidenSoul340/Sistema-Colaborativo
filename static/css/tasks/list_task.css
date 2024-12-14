@@ -1,0 +1,95 @@
+.T-I {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.T-F {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.add-task {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.add-task:hover {
+    background-color: #218838;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #007bff;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.task {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+}
+
+.task {
+    background-color: #bce40946;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+}
+
+.task.complete {
+    background-color: #d4edda;
+    border-left: 5px solid #28a745;
+}
+
+.Secao_tarefas {
+    margin-bottom: 30px;
+}
+
+.incompleta{
+    color: #777;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.completa{
+    color: #777;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.trocar-pagina {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.trocar-pagina:hover {
+    background-color: #0056b3;
+}
